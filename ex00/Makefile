@@ -6,7 +6,7 @@
 #    By: agrimald <agrimald@student.42barcelona.co  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/24 18:58:33 by agrimald          #+#    #+#              #
-#    Updated: 2025/02/24 19:08:56 by agrimald         ###   ########.fr        #
+#    Updated: 2025/02/24 21:03:07 by agrimald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ END_COLOR = \033[0m
 
 SRC = main.cpp
 
-INC = main.hpp
+INC = easyfind.hpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
