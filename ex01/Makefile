@@ -6,7 +6,7 @@
 #    By: agrimald <agrimald@student.42barcelona.co  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/25 17:32:22 by agrimald          #+#    #+#              #
-#    Updated: 2025/02/25 21:00:11 by agrimald         ###   ########.fr        #
+#    Updated: 2025/02/26 19:49:15 by agrimald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ $(NAME): $(OBJECTS)
 		@$(CPP) $(CPPFLAGS) -o $@ $^
 
 %.o: %.cpp $(INC) Makefile
-		@printf "$(YELLOW)\nGenerating Objects .... %s $(END_COLOR)\r\n" $@
+		@printf "$(YELLOW)Generating Objects .... %s $(END_COLOR)\r\n" $@
 		@$(CPP) $(CPPFLAGS) -c $< -o $@
 
 fclean: clean
