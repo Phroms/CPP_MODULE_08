@@ -23,7 +23,7 @@ int main()
 		}
 
 		Span largeSpan(10000);
-		largeSpan.addNumbers<std::vector<int> >(moreNumbers.begin(), moreNumbers.end());
+		largeSpan.addNumbers(moreNumbers.begin(), moreNumbers.end());
 
 		std::cout << "Large Span - Shortest: " << largeSpan.shortestSpan() << std::endl;
 		std::cout << "Large Span - Longest: " << largeSpan.longestSpan() << std::endl;

@@ -30,5 +30,36 @@ int main()
 		++it;
 	}
 	std::stack<int> s(mstack);
+
+	std::cout << "\033[93m------ My Tests ------\033[0m" << std::endl;
+
+	MutantStack<int> testStack;
+
+	std::cout << "\033[93mTamano de testStack: \033[0m" << testStack.size() << std::endl;
+
+	testStack.push(10);
+	testStack.push(20);
+	testStack.push(30);
+
+	std::cout << "\033[93mTamano despues de push: \033[0m" << testStack.size() << std::endl;
+
+	std::cout << "\033[93mValor en la cima: \033[0m" << testStack.top() << std::endl;
+
+	testStack.pop();
+
+	std::cout << "\033[93mTamano despues del pop: \033[0m" << testStack.size() << std::endl;
+
+	std::cout << "\033[93mNuevo valor en la cima: \033[0m" << testStack.top() << std::endl;
+
+	MutantStack<int>::iterator itTest = testStack.begin();
+	MutantStack<int>::iterator iteTest = testStack.end();
+
+	std::cout << "\033[92mElementos del TestStack: \033[0m" << std::endl;
+
+	while (itTest != iteTest)
+	{
+		std::cout << *itTest << std::endl;
+		++itTest;
+	}
 	return 0;
 }

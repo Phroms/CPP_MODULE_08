@@ -17,6 +17,15 @@ void Span::addNumber(int number)
 	_numbers.push_back(number);
 }
 
+void Span::addNumbers(const std::vector<int>::iterator &begin, const std::vector<int>::iterator &end)
+{
+	if (std::distance(begin, end) + _numbers.size() > _maxSize) // std::distance calcula la distancia entre dos iteradores y verifica si al sumar los elementos supera _maxSize
+	{
+		throw std::length_error("\033[91mError\033[0m: No more numbers can be added, the Span is full");
+	}
+	_numbers.insert(_numbers.end(), begin, end); // inserta los elementos en el contenedor _numbers
+}
+
 // Metodo para calcular el menor span
 int Span::shortestSpan()
 {
