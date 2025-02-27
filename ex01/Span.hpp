@@ -25,3 +25,5 @@ class Span
 		int shortestSpan();
 		int longestSpan();
 };
+
+// No se puede usar template, en vez de template deberia ser vector y meter eso en el cpp

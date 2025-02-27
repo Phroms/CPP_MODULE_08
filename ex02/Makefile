@@ -6,7 +6,7 @@
 #    By: agrimald <agrimald@student.42barcelona.co  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/27 15:42:54 by agrimald          #+#    #+#              #
-#    Updated: 2025/02/27 15:55:41 by agrimald         ###   ########.fr        #
+#    Updated: 2025/02/27 16:09:20 by agrimald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ END_COLOR = \033[0m
 
 SRC = main.cpp
 
-INC = main.hpp
+INC = MutantStack.hpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
